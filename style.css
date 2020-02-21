@@ -254,6 +254,110 @@ main {
     height: 15px;
     background-color: #ea676b;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
+.container {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "pen bulb heart"
+            "phone bubble star";
 
+}
+
+.container h1 {
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.description {
+    margin-left: 20px;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+.header {
+    grid-area: header;
+}
+
+.pen {
+    grid-area: pen;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.phone {
+    grid-area: phone;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bulb {
+    grid-area: bulb;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bubble {
+    grid-area: bubble;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.heart {
+    grid-area: heart;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.star {
+    grid-area: star;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+img {
+  align-self: flex-start;
+    margin-top: 16px;
+    margin-right: 20px ;
+}
+
+.container .text p {
+    width: 219px;
+    height: 65px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.margin {
+    margin-left: 20px;
+}
