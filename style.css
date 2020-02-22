@@ -272,3 +272,9 @@ img {
 .margin {
     margin-left: 20px;
 }
+
+.bottom2 {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
