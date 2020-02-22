@@ -13,13 +13,6 @@ header{
     align-items: center;
 }
 
-.RightArrow:hover {
-    opacity: 1;
-}
-
-.LeftArrow:hover {
-    opacity: 1;
-}
 
 .bottom {
     width: 1020px;
@@ -53,6 +46,9 @@ main {
     width: 1020px;
     height: 600px;
     background-color: #f06c64;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 i {
@@ -66,6 +62,7 @@ i {
     border-radius: 5px;
 }
 
+
 .LeftArrow {
     transform: rotate(135deg);
     order: 1;
@@ -74,47 +71,33 @@ i {
 
 .RightArrow {
     transform: rotate(-45deg);
-    order: 4;
+    order: 3;
     margin-right: 40px;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.RightArrow:hover {
+    opacity: 1;
 }
 
-.VerticalPhone {
+.LeftArrow:hover {
+    opacity: 1;
+}
+
+.mobile {
+    box-shadow: 12px 11px 0 rgba(0, 0, 0, 0.5);
+    order: 2;
     width: 215px;
     height: 458px;
-    border-radius:27px;
-    background-color: #f2f2f2;
-    order: 2;
-    box-shadow: 25px 25px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-}
-
-.HorizontalPhone {
-    width: 458px;
-    height: 215px;
     border-radius: 27px;
     background-color: #f2f2f2;
-    order: 3;
-    box-shadow: 25px 25px rgba(0,0,0,0.2);
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
+    margin-right: 100px;
 }
 
-.speaker {
-    width: 36px;
-    height: 5px;
-    border-radius: 3px;
-    background-color: #acacac;
-    margin-top: 35px;
-    position: absolute;
+.rotate {
+    transform: rotate(90deg);
 }
 
 .RedDot {
@@ -123,130 +106,58 @@ main {
     border-radius: 2px;
     background-color: #eb5055;
     position: absolute;
-    margin-top: 18.5px;
-    z-index: 5;
+    margin-top: 2px;
+    margin-left: 2px;
 }
 
-.OuterCircle {
-    position: absolute;
+.circle {
     width: 9px;
     height: 9px;
     border-radius: 4px;
     background-color: #d8d8d8;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.screen {
-    width: 190px;
-    height: 330px;
-    background-color: black;
-    border: 3px solid #c6c6c6;
-    margin-top: 60px;
-}
-
-.Layer6 {
-    margin-top: 63px;
-    margin-left: 2px;
-    position: absolute;
-
-}
-.img {
-    width: 191px;
-    height: 330px;
-    margin-right: 4px;
-}
-
-.circle {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    border-radius: 21px;
-    background-color: #fafafa;
-    margin-top: 405px;
-}
-
-.square {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    background-color: #bababa;
-    margin-top:418px;
-}
-
-.circle1 {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    border-radius: 21px;
-    background-color: #fafafa;
-    margin-left: 9px;
-    order: 1;
-}
-
-.square1 {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    background-color: #bababa;
-    margin-left:22px;
-}
-
-.screen1 {
-    position: absolute;
-    width: 190px;
-    height: 330px;
-    background-color: black;
-    border: 3px solid #c6c6c6;
-    order: 2;
-    transform: rotate(90deg);
-    margin-left: 130px;
-}
-
-.Layer6_1 {
-    /*margin-top: 63px;
-    margin-left: 2px;*/
-    margin-left: 129px;
-    position: absolute;
-    transform: rotate(90deg);
-    margin-top: 18px;
-
-}
-.img1 {
-    width: 191px;
-    height: 330px;
-    margin-right: 3px;
-}
-
-.speaker1 {
+.speaker {
     width: 36px;
     height: 5px;
     border-radius: 3px;
     background-color: #acacac;
-    position: absolute;
-    transform: rotate(90deg);
-    margin-right: 36px;
-    order: 3;
-    margin-left: 400px;
 }
 
-.RedDot1 {
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #eb5055;
-    position: absolute;
-    z-index: 5;
-    margin-left: 430px;
+.screen {
+    border: 3px solid #c6c6c6;
+    width: 189px;
+    height: 333px;
+    margin-top: 20px;
+    background-color: black;
 }
 
-.OuterCircle1 {
+.img img {
+    width: 189px;
+    height: 333px;
     position: absolute;
-    width: 9px;
-    height: 9px;
+    margin-top: 0px;
+}
+
+.ButCircle {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.but {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #bababa;
     border-radius: 4px;
-    background-color: #d8d8d8;
-    margin-left: 428px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .bottom1 {
