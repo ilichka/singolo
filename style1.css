@@ -1,0 +1,181 @@
+header {
+    width: 1020px;
+    height: 190px;
+    background-color: #2d303a;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    font-size: 12px;
+    line-height: 22px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+.border {
+    height: 22px;
+    border-radius: 5px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+}
+
+
+.all {
+    width: 29px;
+}
+
+.WebDesing {
+    width: 78px;
+}
+
+.GraphicDesign {
+    width: 93px;
+}
+
+.ArtWork {
+    width: 57px;
+}
+
+.all:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.WebDesing:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.GraphicDesign:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.ArtWork:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.white:hover {
+    color: white;
+}
+
+main {
+    width: 1020px;
+    height: 680px;
+    background-color: #2d303a;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1020px;
+    height: 674px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pic {
+    width: 220px;
+    height: 187px;
+    background-color: #464b5e;
+    margin: auto auto;
+}
+
+.bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+footer {
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 210px;
+}
+
+.About {
+    height: 517px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    background-color: #464b5e;
+    margin: auto auto;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.About p{
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #666d89;
+}
+
+
+

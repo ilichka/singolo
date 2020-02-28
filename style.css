@@ -13,6 +13,9 @@ header{
     align-items: center;
 }
 
+span {
+    color: #f06c64;
+}
 
 .bottom {
     width: 1020px;
@@ -26,7 +29,7 @@ h1 {
     line-height: 6px;
     color: #ffffff;
     font-family: "Lato";
-    font-weight: 700;
+    font-weight: 600;
     text-align: left;
     margin-left: 40px;
 }
@@ -34,7 +37,8 @@ h1 {
 header p{
     font-size: 12px;
     line-height: 6px;
-    color: #f06c64;
+    /*color: #f06c64;*/
+    color: white;
     font-family: "Lato";
     font-weight: 700;
     text-align: right;
@@ -138,7 +142,7 @@ i {
     width: 189px;
     height: 333px;
     position: absolute;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .ButCircle {
@@ -195,7 +199,7 @@ i {
     margin-left: 20px;
     width: 940px;
     height: 57px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
