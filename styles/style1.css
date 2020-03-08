@@ -1,4 +1,4 @@
-header {
+.SecondHeader {
     width: 1020px;
     height: 190px;
     background-color: #2d303a;
@@ -6,7 +6,7 @@ header {
     flex-direction: column;
 }
 
-.header p {
+.SecondHeader p {
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -18,7 +18,7 @@ header {
     margin-left: 40px;
 }
 
-h1{
+.SecondHeader h1{
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -30,24 +30,23 @@ h1{
     margin-bottom: 17px;
 }
 
-.navigation {
+.SecondHeader .navigation {
     display: flex;
     flex-direction: row;
     margin-left: 42px;
 }
 
-h3{
+.SecondHeader h3{
     font-size: 12px;
     line-height: 22px;
     color: #666d89;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
     margin: 0;
     text-align: center;
 }
 
-.border {
+.SecondHeader .border {
     height: 22px;
     border-radius: 5px;
     background-color: #2d303a;
@@ -56,52 +55,32 @@ h3{
 }
 
 
-.all {
+.SecondHeader .all {
     width: 29px;
 }
 
-.WebDesing {
+.SecondHeader .WebDesing {
     width: 78px;
 }
 
-.GraphicDesign {
+.SecondHeader .GraphicDesign {
     width: 93px;
 }
 
-.ArtWork {
+.SecondHeader .ArtWork {
     width: 57px;
 }
 
-.hov:hover {
+.SecondHeader .hov:hover {
     color: white;
     border: 1px solid white;
 }
 
-/*.all:hover {
-    color: white;
-    border: 1px solid white;
-}
-
-.WebDesing:hover {
-    color: white;
-    border: 1px solid white;
-}
-
-.GraphicDesign:hover {
-    color: white;
-    border: 1px solid white;
-}
-
-.ArtWork:hover {
-    color: white;
-    border: 1px solid white;
-}*/
-
-.white:hover {
+.SecondHeader .white:hover {
     color: white;
 }
 
-main {
+.SecondMain {
     width: 1020px;
     height: 680px;
     background-color: #2d303a;
@@ -109,7 +88,7 @@ main {
     flex-direction: column;
 }
 
-.container {
+.SecondMain .container {
     width: 940px;
     height: 601px;
     display: grid;
@@ -118,31 +97,31 @@ main {
     margin: 16px 40px 57px 40px;
 }
 
-.pic {
+.SecondMain .pic {
     width: 220px;
     height: 187px;
     background-color: #464b5e;
 }
 
-.left {
+.SecondMain .left {
     margin-left: 5px;
 }
 
-.row2 {
+.SecondMain .row2 {
     margin-top: 7px;
 }
 
-.row3 {
+.SecondMain .row3 {
     align-self: flex-end;
 }
 
-.bottom {
+.SecondBottom {
     width: 1020px;
     height: 6px;
     background-color: #323746;
 }
 
-footer {
+.SecondFooter {
     width: 1020px;
     height: 728px;
     background-color: #f2f2f2;
@@ -150,40 +129,60 @@ footer {
     flex-direction: column;
 }
 
-.header {
+.SecondFooter .header {
     height: 210px;
 }
 
-.header p{
+.SecondFooter p {
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
     width: 980px;
 }
 
-.About {
+.SecondFooter h1{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 65px;
+    margin-left: 40px;
+    margin-bottom: 17px;
+}
+
+.SecondFooter .About {
     height: 517px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
 
-.img {
+.SecondFooter .img {
     width: 300px;
     height: 300px;
     background-color: #464b5e;
 }
 
-.jensen_img {
+.SecondFooter .jensen_img {
     margin-left: 40px;
 }
 
-.miles_img {
+.SecondFooter .miles_img {
     margin-left: 20px;
 }
 
-.description{
+.SecondFooter .description{
     height: 100px;
 }
 
-h2 {
+.SecondFooter h2 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
@@ -192,15 +191,15 @@ h2 {
     text-align: left;
 }
 
-.miles_h2 {
+.SecondFooter .miles_h2 {
     margin-left: 20px;
 }
 
-.jensen_h2 {
+.SecondFooter .jensen_h2 {
     margin-left: 40px;
 }
 
-.About p{
+.SecondFooter .About p{
     width: 300px;
     height: 175px;
     font-size: 12px;
@@ -211,28 +210,32 @@ h2 {
     text-align: left;
 }
 
-.jensen_p {
+.SecondFooter .jensen_p {
     margin-left: 40px;
 }
 
-.miles_p {
+.SecondFooter .miles_p {
     margin-left: 20px;
 }
 
-nav {
+.SecondFooter .visari_p {
+   margin-left: 0;
+}
+
+.SecondFooter nav {
     display: flex;
     flex-direction: row;
 }
 
-.jensen_nav {
+.SecondFooter .jensen_nav {
     margin-left: 40px;
 }
 
-.miles_nav {
+.SecondFooter .miles_nav {
     margin-left: 20px;
 }
 
-.circle {
+.SecondFooter .circle {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -244,14 +247,20 @@ nav {
     margin-right: 8px;
 }
 
-svg {
+.SecondFooter svg {
     fill: #666d89;
     width: 20px;
     height: 20px;
 }
 
-svg:hover {
+.SecondFooter svg:hover {
     fill:black;
+}
+
+.SecondBottom1 {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
 }
 
 
