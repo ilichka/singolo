@@ -1,0 +1,242 @@
+
+
+.ThirdHeader, .ThirdMain {
+    width: 1020px;
+    background-color: #f06c64;
+}
+
+.ThirdHeader {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ThirdHeader h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    margin: 60px 0 20px 40px;
+}
+
+.ThirdHeader p {
+    width: 960px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin: 0 0 0 40px;
+}
+
+.ThirdMain {
+    height: 488px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ThirdMain form {
+    display: flex;
+    flex-direction:column;
+    margin: 40px 20px 60px 40px;
+}
+
+.ThirdMain input {
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.ThirdMain ::placeholder {
+    color:#f48c8f;
+    margin-left: 15px;
+}
+
+.ThirdMain textarea {
+    width: 615px;
+    height: 202px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: 0;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.ThirdMain .button {
+    background-color: darkred;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.ThirdMain .button p {
+    color: #f48c8f;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.ThirdMain .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+}
+
+.ThirdMain h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+}
+
+.ThirdMain .contact p {
+    width: 310px;
+    height: 90px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.ThirdMain .info p{
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.ThirdMain .location,.numbers,.mail{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ThirdMain .mail,.numbers {
+    margin-top: 5px;
+}
+
+.ThirdMain .contact svg {
+    height: 10px;
+    width: 10px;
+    fill: #f0d8d9;
+    margin-top: 5px;
+}
+
+.ThirdMain .numbers svg{
+    transform: rotate(-90deg);
+}
+
+.ThirdMain .info p {
+    height: 20px;
+    width: 120px;
+}
+
+a {
+    text-decoration: none;
+    width: 110px;
+}
+
+.ThirdMain .info a:active {
+    color: black;
+}
+
+.ThirdBottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.ThirdFooter {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ThirdFooter p {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    margin-left: 40px;
+    color: #666d89;
+}
+
+.ThirdFooter .SocialMedia {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.ThirdFooter .circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-right: 8px;
+}
+
+.ThirdFooter svg {
+    fill: #666d89;
+    width: 20px;
+    height: 20px;
+}
+
+.ThirdFooter svg:hover {
+    fill: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.output {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 600px;
+    height: 380px;
+    background-color: #666d89;
+    border-radius: 5px;
+}

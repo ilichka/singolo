@@ -111,7 +111,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 100px;
+    margin-left: 100px;
+    margin-right: 200px;
 }
 
 .FirstMain .rotate {
@@ -271,7 +272,7 @@ span {
 }
 
 .FirstFooter img {
-  align-self: flex-start;
+    align-self: flex-start;
     margin-top: 16px;
     margin-right: 20px ;
 }
@@ -305,26 +306,47 @@ span {
 
 
 
+.carusel {
+    width: 1020px;
+    position: absolute;
+    display: block;
+}
 
+.mobiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .item {
     display: none;
-    order:2;
-    width:75%;
+    position: relative;
+    width:85%;
     animation: 0.5s ease-in-out;
 }
 
 .item.active {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    width: 100%;
 }
 
-.item.img {
+.item-container {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+}
+
+.item.image {
+     margin-left: 100px;
+}
+
+.LeftArrow,.RightArrow {
+    transform: translateY(-50%);
 }
 
 .next {
     position: absolute;
+    display: block;
 }
 
 .to-left {
@@ -354,15 +376,19 @@ span {
         left: 0;
     }
     to {
-        left: -100%;
+        left: -85%;
     }
 }
 
 @keyframes right {
     from {
-        right: 100%;
+        right: 85%;
     }
     to {
         right: 0;
     }
+}
+
+.off {
+    display: none;
 }

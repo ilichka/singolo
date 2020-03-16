@@ -88,7 +88,7 @@
     flex-direction: column;
 }
 
-.SecondMain .container {
+.SecondMain .secondContainer {
     width: 940px;
     height: 601px;
     display: grid;
@@ -219,7 +219,7 @@
 }
 
 .SecondFooter .visari_p {
-   margin-left: 0;
+    margin-left: 0;
 }
 
 .SecondFooter nav {
@@ -263,8 +263,31 @@
     background-color: #ffffff;
 }
 
-.n1,.n2,.n3,.n4 {
+
+
+
+
+
+
+/*JS!!*/
+
+
+
+
+
+
+
+
+
+.selected h3 {
+    color: white;
+    border: 1px solid white;
+}
+
+.hide {
     display: none;
 }
 
-
+.BORDER {
+    border: #F06C64 5px solid;
+}
