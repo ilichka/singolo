@@ -11,15 +11,16 @@
 <div class="FirstHeader">
     <h1>SINGOLO<span>*</span></h1>
     <div class="p">
-        <p><span>HOME</span></p>
-        <p><a href="#service">SERVICE</a></p>
-        <p><a href="#portfolio">PORTFOLIO</a></p>
-        <p><a href="#about">ABOUT</a></p>
-        <p><a href="#contact">CONTACT</a></p>
+       <a class="aHome" href="#home"> <p class="HOME red k">HOME</p></a>
+        <a class="aService" href="#service"><p class="SERVICE k">SERVICE</p></a>
+        <a class="aPortfolio" href="#portfolio"><p class="PORTFOLIO k">PORTFOLIO</p></a>
+        <a class="aAbout" href="#about"><p class="ABOUT k">ABOUT</p></a>
+        <a class="aContact" href="#contact"><p class="CONTACT k">CONTACT</p></a>
     </div>
+    <script src="navigation.js"></script>
 </div>
 <div class="FirstBottom"></div>
-<div class="FirstMain">
+<div class="FirstMain" id="home">
     <div class="carusel">
         <div class="item-container">
             <div class="item active">
@@ -74,7 +75,7 @@
     </div>
     <i class="LeftArrow"></i>
     <i class="RightArrow"></i>
-    <script src="script.js"></script>
+    <script src="scrrrr.js"></script>
     <script src="script1.js"></script>
 </div>
 <div class="FirstBottom1"></div>
@@ -418,21 +419,23 @@
 
 <div class="ThirdMain">
     <div class="output hide">
-        <p id="pname"></p>
-        <p id="pemail"></p>
-        <p id="psubject"></p>
-        <p id="ptextarea"></p>
+        <p>The letter was sent</p>
+        <p id="pname" class="pname pp">Name : </p>
+        <p id="pemail" class="pemail pp">Email :</p>
+        <p id="psubject" class="psubject pp">Subject :</p>
+        <p id="ptextarea" class="ptextarea p">Description :</p>
+        <button class="button">ok</button>
     </div>
     <div class="form">
         <form name="lol">
-            <input type="text" name="Name" placeholder="Name (Required)" required pattern="^[a-zA-Z]+$" id="Name"
+            <input type="text" name="Name" placeholder="Name (Required)" required  id="Name"
                    class="Name"/>
-            <input type="text" name="Email" placeholder="Email (Required)" required pattern="^[a-zA-Z]+$" id="Email"
+            <input type="text" name="Email" placeholder="Email (Required)" required id="Email"
                    class="Email"/>
-            <input type="text" name="Subject" placeholder="Subject" pattern="^[a-zA-Z]+$" id="Subject" class="Subject"/>
-            <textarea cols="1" rows="1" placeholder="Describe your project in details" id="textarea"
-                      class="textarea"></textarea>
-            <div class="button"><p>Submit</p></div>
+            <input type="text" name="Subject" placeholder="Subject" id="Subject" class="Subject"/>
+            <textarea cols="1" rows="1" placeholder="Describe your project in details" id="textarea" class="textarea"></textarea>
+            <input type="submit" class="button" id="apply-btn">
+            <div class="button hide"><p>Submit</p></div>
         </form>
     </div>
     <div class="contact">

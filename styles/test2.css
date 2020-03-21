@@ -240,3 +240,18 @@ a {
     background-color: #666d89;
     border-radius: 5px;
 }
+
+.output p {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 580px;
+    color: yellow;
+}
+
+.output.pp {
+    height: 20px;
+}
+
+.output.p {
+    height: 180px;
+}
