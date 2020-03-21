@@ -7,17 +7,17 @@ function showPopup() {
     values();
 }
 
-function checkForm(name,email) {
+function checkForm(name, email) {
     const checkValue = (val) => /^[a-zA-Z]+$/.test(val);
     if (checkValue(name) && checkValue(email)) {
         console.log(1);
         showPopup()
     } else {
-        if(checkValue(name) && checkValue(email)===false) {
+        if (checkValue(name) && checkValue(email) === false) {
             document.querySelector('#Email').style.background = 'red';
             notSubmit();
         } else {
-            if(checkValue(name)===false && checkValue(email)) {
+            if (checkValue(name) === false && checkValue(email)) {
                 document.querySelector('#Name').style.background = 'red';
                 notSubmit();
             } else {
@@ -35,24 +35,28 @@ function notSubmit() {
 
 let name = document.querySelector('#Name');
 let email = document.querySelector('#Email').value;
+let firstname = document.querySelector('.pname').innerText;
+let firstemail = document.querySelector('.pemail').innerText;
+let firstsubject = document.querySelector('.psubject').innerText;
+let firsttextarea = document.querySelector('.ptextarea').innerText;
 
 function values() {
     let name = document.getElementById('Name').value;
-    let firstname = document.querySelector('.pname').innerText;
+
     document.getElementById('pname').innerText = firstname + ' ' + name;
     let email = document.getElementById('Email').value;
-    let firstemail = document.querySelector('.pemail').innerText;
+
     document.getElementById('pemail').innerText = firstemail + ' ' + email;
     let subject = document.getElementById('Subject').value;
-    let firstsubject = document.querySelector('.psubject').innerText;
-    if(subject==='') {
+
+    if (subject === '') {
         document.getElementById('psubject').innerText = 'no subject'
     } else {
         document.getElementById('psubject').innerText = firstsubject + ' ' + subject;
     }
     let textarea = document.getElementById('textarea').value;
-    let firsttextarea = document.querySelector('.ptextarea').innerText;
-    if(textarea==='') {
+
+    if (textarea === '') {
         document.getElementById('ptextarea').innerText = 'no description'
     } else {
         document.getElementById('ptextarea').innerText = firsttextarea + ' ' + textarea;
@@ -75,9 +79,13 @@ function ok() {
     document.getElementById('Email').value = '';
     document.getElementById('Subject').value = '';
     document.getElementById('textarea').value = '';
+    document.getElementById('pname').innerText = firstname;
+    document.getElementById('pemail').innerText = firstemail;
+    document.getElementById('psubjext').innerText = firstsubject;
+    document.getElementById('ptextarea').innerText = firsttextarea;
 }
 
-document.querySelector('.button').addEventListener('click',ok);
+document.querySelector('.button').addEventListener('click', ok);
 
 
 
