@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="styles/test2.css" type=text/css rel="stylesheet"/>
     <link href="styles/test1.css" type=text/css rel="stylesheet">
@@ -10,12 +10,21 @@
 </head>
 <body>
 <div class="FirstHeader">
-    <a href="#" class="btn">
-        <span></span>
-    </a>
+    <div class="menu-block">
+        <nav class="menu-nav">
+            <a class="aHome menu-nav__link" href="#home"><p class="HOME red k">HOME</p></a>
+            <a class="aService menu-nav__link" href="#service"><p class="SERVICE k">SERVICE</p></a>
+            <a class="aPortfolio menu-nav__link" href="#portfolio"><p class="PORTFOLIO k">PORTFOLIO</p></a>
+            <a class="aAbout menu-nav__link" href="#about"><p class="ABOUT k">ABOUT</p></a>
+            <a class="aContact menu-nav__link" href="#contact"><p class="CONTACT k">CONTACT</p></a>
+        </nav>
+        <a href="#" class="btn">
+            <span></span>
+        </a>
+    </div>
     <h1>SINGOLO<span>*</span></h1>
     <div class="p">
-       <a class="aHome" href="#home"> <p class="HOME red k">HOME</p></a>
+        <a class="aHome" href="#home"><p class="HOME red k">HOME</p></a>
         <a class="aService" href="#service"><p class="SERVICE k">SERVICE</p></a>
         <a class="aPortfolio" href="#portfolio"><p class="PORTFOLIO k">PORTFOLIO</p></a>
         <a class="aAbout" href="#about"><p class="ABOUT k">ABOUT</p></a>
@@ -419,12 +428,13 @@
     </div>
     <div class="form">
         <form name="lol">
-            <input type="text" name="Name" placeholder="Name (Required)" required  id="Name"
+            <input type="text" name="Name" placeholder="Name (Required)" required id="Name"
                    class="Name"/>
             <input type="text" name="Email" placeholder="Email (Required)" required id="Email"
                    class="Email"/>
             <input type="text" name="Subject" placeholder="Subject" id="Subject" class="Subject"/>
-            <textarea cols="1" rows="1" placeholder="Describe your project in details" id="textarea" class="textarea"></textarea>
+            <textarea cols="1" rows="1" placeholder="Describe your project in details" id="textarea"
+                      class="textarea"></textarea>
             <input type="submit" class="button" id="apply-btn">
             <div class="button hide"><p>Submit</p></div>
         </form>

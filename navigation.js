@@ -68,15 +68,17 @@ document.querySelector('body').addEventListener('wheel', hover);
 
 //button
 
-
+let menu = document.querySelector('.menu-nav');
 let active = false;
 document.querySelector('.btn').addEventListener('click',function (event) {
     event.preventDefault();
     if(active===false) {
-        document.querySelector('.btn').classList.add('btn-active');
+        menu.classList.add('menu-nav-active');
+        this.classList.add('btn-active');
       active = true;
     } else {
-        document.querySelector('.btn').classList.remove('btn-active');
+        this.classList.remove('btn-active');
+        menu.classList.remove('menu-nav-active');
         active = false;
     }
 });

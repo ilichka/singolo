@@ -435,8 +435,9 @@ body{
 
 
 .btn {
+    position: absolute;
     display: none;
-    margin-left: 2%;
+    left: 5%;
     height: 50px;
     width: 50px;
 }
@@ -474,8 +475,38 @@ body{
 .btn-active span {
     height: 0;
 }
+.menu-block {
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-nav__link {
+    height: 20vh;
+    display: inline-block;
+    align-self: center;
+}
+.menu-nav {
+    margin-top: 675px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d303a;
+    transform-origin: left center;
+    transition: 0.5s;
+    transform: scaleX(0);
+    opacity: 0;
+    width: 50vw;
+}
+.menu-nav-active {
+    transform: scaleX(1);
+    opacity: 1;
+}
 
 @media only screen and (max-width: 375px) {
+    .menu-block {
+        display: flex;
+    }
     .btn {
         display: block;
     }
