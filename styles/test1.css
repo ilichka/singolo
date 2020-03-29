@@ -134,6 +134,7 @@
 }
 
 .SecondFooter p {
+    word-wrap: break-word;
     height: 57px;
     font-size: 18px;
     line-height: 30px;
@@ -290,4 +291,110 @@
 
 .BORDER {
     border: #F06C64 5px solid;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 375px) {
+    .SecondMain {
+        align-items: center;
+        justify-content: center;
+        height: 822px;
+    }
+    .SecondMain .row3 {
+        align-self: flex-start;
+    }
+    .SecondMain .left {
+        margin-left: 0px;
+    }
+    .SecondMain .row2 {
+        margin-top: 0px;
+    }
+    .SecondMain .secondContainer {
+        width: 800px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 16px 40px 0px 40px;
+    }
+    .SecondFooter p{
+        width: 708px;
+    }
+    .SecondHeader p {
+        width: 650px;
+    }
+    .SecondHeader h1 {
+        margin-top: 45px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .SecondHeader h1,.navigation {
+        justify-self: center;
+        align-self: center;
+       /* margin-right: auto;
+        margin-left: auto;*/
+        margin-top: 30px;
+    }
+    .SecondHeader p {
+        width: 310px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .SecondMain {
+        /*width: 375px;*/
+        height: 866px;
+    }
+    .SecondMain .row3 {
+        align-self: flex-start;
+    }
+    .SecondMain .left {
+        margin-left: 0px;
+    }
+    .SecondMain .row2 {
+        margin-top: 0px;
+    }
+    .SecondMain .secondContainer {
+        width: 500px;
+        height: 810px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 50px auto 0px auto;
+    }
+    .col2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+     .col3 {
+        display: none;
+    }
+    .SecondFooter p{
+        width: 300px;
+    }
+    .SecondFooter .header{
+        margin-right: auto;
+        margin-left: auto;
+        height: 420px;
+    }
+    .SecondFooter {
+        height: 2000px;
+    }
+    .SecondFooter .About {
+        margin-left: auto;
+        margin-right: auto;
+        height: 517px;
+        width: 360px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .SecondFooter .miles_description {
+        margin-left: 20px;
+    }
+    .SecondFooter .visari_description {
+        margin-left: 40px;
+    }
+    .SecondFooter .miles_img, .visari_img, .miles_nav, .visari_nav {
+        margin-left: 40px;
+    }
 }

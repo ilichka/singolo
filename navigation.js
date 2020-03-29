@@ -63,3 +63,20 @@ document.querySelector('.aAbout').addEventListener('click', about);
 document.querySelector('.aContact').addEventListener('click', contact);
 document.querySelector('body').addEventListener('wheel', hover);
 
+
+
+
+//button
+
+
+let active = false;
+document.querySelector('.btn').addEventListener('click',function (event) {
+    event.preventDefault();
+    if(active===false) {
+        document.querySelector('.btn').classList.add('btn-active');
+      active = true;
+    } else {
+        document.querySelector('.btn').classList.remove('btn-active');
+        active = false;
+    }
+});

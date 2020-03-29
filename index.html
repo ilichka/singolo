@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="styles/test2.css" type=text/css rel="stylesheet"/>
     <link href="styles/test1.css" type=text/css rel="stylesheet">
@@ -9,6 +10,9 @@
 </head>
 <body>
 <div class="FirstHeader">
+    <a href="#" class="btn">
+        <span></span>
+    </a>
     <h1>SINGOLO<span>*</span></h1>
     <div class="p">
        <a class="aHome" href="#home"> <p class="HOME red k">HOME</p></a>
@@ -81,16 +85,16 @@
 <div class="FirstBottom1"></div>
 <div class="FirstFooter" id="service">
     <div class="container">
-        <div class="header">
+        <div class="header max375">
             <h1>Our services</h1>
             <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
-                commodo luctus, nisi erat porttitor<br>
+                commodo luctus, nisi erat porttitor
                 ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum nibh.
             </p>
         </div>
-        <div class="pen">
-            <img class="margin" src="assets/pen.png" alt="pen"/>
+        <div class="pen max375">
+            <img class="margin marginMax" src="assets/pen.png" alt="pen"/>
             <div class="text">
                 <h2>Custom Design</h2>
                 <p>
@@ -100,8 +104,8 @@
                 </p>
             </div>
         </div>
-        <div class="phone">
-            <img class="margin" src="assets/phone.png" alt="phone"/>
+        <div class="phone max375">
+            <img class="margin max marginMax" src="assets/phone.png" alt="phone"/>
             <div class="text">
                 <h2>Responsive Layout</h2>
                 <p>
@@ -111,8 +115,8 @@
                 </p>
             </div>
         </div>
-        <div class="bulb">
-            <img src="assets/bulb.png" alt="bulb"/>
+        <div class="bulb max375">
+            <img class="marginMax" src="assets/bulb.png" alt="bulb"/>
             <div class="text">
                 <h2>Inovative Ideas</h2>
                 <p>
@@ -122,8 +126,8 @@
                 </p>
             </div>
         </div>
-        <div class="bubble">
-            <img src="assets/bubble.png" alt="bubble"/>
+        <div class="bubble max375">
+            <img class="marginMax" src="assets/bubble.png" alt="bubble"/>
             <div class="text">
                 <h2>24/7 Support</h2>
                 <p>
@@ -133,8 +137,8 @@
                 </p>
             </div>
         </div>
-        <div class="heart">
-            <img src="assets/heart.png" alt="heart"/>
+        <div class="heart max375">
+            <img class="marginMax" src="assets/heart.png" alt="heart"/>
             <div class="text">
                 <h2>Love is The Answer</h2>
                 <p>
@@ -144,8 +148,8 @@
                 </p>
             </div>
         </div>
-        <div class="star">
-            <img src="assets/star.png" alt="star"/>
+        <div class="star max375">
+            <img class="marginMax" src="assets/star.png" alt="star"/>
             <div class="text">
                 <h2>Feel Like A Star</h2>
                 <p>
@@ -222,7 +226,7 @@
     <div class="header">
         <h1>About Us</h1>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
-            erat porttitor<br>
+            erat porttitor
             ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh.
         </p>
@@ -287,7 +291,7 @@
             <div class="img miles_img">
                 <img src="assets/Miles.png">
             </div>
-            <div class="description">
+            <div class="description miles_description">
                 <h2 class="miles_h2">Desmond Miles</h2>
                 <p class="miles_p">Curabitur vestibulum eget mauris quis laoreet. Phasellus<br>
                     in quam laoreet, viverra lacus ut, ultrices velit.
@@ -340,10 +344,10 @@
             </nav>
         </div>
         <div class="Visari">
-            <div class="img">
+            <div class="img visari_img">
                 <img src="assets/Visari.png">
             </div>
-            <div class="description">
+            <div class="description visari_description">
                 <h2>Scolara Visari</h2>
                 <p class="visari_p">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet<br>
                     turpis, et consequat felis. Quisque condimentum.
@@ -400,27 +404,14 @@
 <div class="ThirdHeader" id="contact">
     <h1>Get a Quote</h1>
     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus , nisi erat
-        porttitor<br>
+        porttitor
         ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
     </p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="ThirdMain">
     <div class="output hide">
         <p>The letter was sent</p>
-        <p id="pname" class="pname pp">Name : </p>
+        <p id="pname" class="pname pp">Name :</p>
         <p id="pemail" class="pemail pp">Email :</p>
         <p id="psubject" class="psubject pp">Subject :</p>
         <p id="ptextarea" class="ptextarea p">Description :</p>
@@ -440,9 +431,9 @@
     </div>
     <div class="contact">
         <h2>Contact Information</h2>
-        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>
-            ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat<br>
-            libero. Nulla sed nunc et tortor luctus faucibus. Morbi at<br>
+        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-
+            ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+            libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
             aliquet turpis, et consequat felis.</p>
         <div class="info">
             <div class="location">
